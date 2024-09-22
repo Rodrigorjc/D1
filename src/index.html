@@ -5,12 +5,28 @@
   <title>RunFix</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="/inico" class="d-flex align-items-center" >
+          <img src="logo.png" alt="LogoRunFix" width="50" height="50" style="border-radius: 50%;">
+        </a>
+        <a href="/inicio"><i>RunFix</i></a>
+        <div class="search-container">
+          <input type="text" id="search-input" class="input-group-text buscar" placeholder="Buscar...">
+          <i class="fas fa-search" id="search-icon"></i>
+          <i class="fas fa-user" id="profile-icon"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
   <app-root></app-root>
-  <img src="prueba.png" alt="">
-  <a href="inicio">inicio</a>
-  <a href=""></a>
+
 </body>
 </html>

@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
+}
+body{
+    background-color: #E2FDFF;;
+}
+nav{
+    background-color: #9BB1FF;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+}
+.fas{
+    font-size: 25px;
+    margin-left: 5px;
+}
+.search-container {
+display: flex;
+align-items: center;
+}
+
+#search-input {
+display: none;
+transition: all 0.3s ease;
+}
+
+.show-search #search-input {
+display: block;
+margin-right: auto;
+}
+
