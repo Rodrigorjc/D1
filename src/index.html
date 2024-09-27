@@ -8,6 +8,7 @@
   <link rel="icon" type="image/x-icon" href="logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/b9d5886cee.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -17,10 +18,10 @@
           <img src="logo.png" alt="LogoRunFix" width="50" height="50" style="border-radius: 50%;">
         </a>
         <a href="/inicio"><i>RunFix</i></a>
-        <div class="search-container">
+        <div class="search-container d-flex align-items-center justify-content-center">
           <input type="text" id="search-input" class="input-group-text buscar" placeholder="Buscar...">
           <i class="fas fa-search" id="search-icon"></i>
-          <i class="fas fa-user" id="profile-icon"></i>
+          <a class="robot d-flex align-items-center justify-content-center" href="/login"><i class="fas fa-user" id="profile-icon"></i></a>
         </div>
       </div>
     </nav>
@@ -28,5 +29,32 @@
   
   <app-root></app-root>
 
+  <footer class="mt-5 border-top border-3 border-dark ">
+    <div class="container">
+      <div class="row p-2">
+        <div class="col d-flex justify-content-center align-items-center">
+          <section>
+            <img src="logo.png" alt="LogoRunFix" width="100" height="100" style="border-radius: 10%;">
+          </section>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center fs-5 pb-4">
+          <h3 class="fs-3"><b>Contacta con nosotros</b></h3>
+          <b><i class="fa-solid fa-phone-volume"></i> +91365 698 874 </b>
+          <b><i class="fa-solid fa-envelope"></i> runfix@info.es</b>
+          <a href="/sobre-nosotros"><b>Sobre nosotros</b></a>
+        </div>
+        <div class="col d-flex flex-column justify-content-center align-items-center fs-5">
+          <h3 class="fs-3"><b>Acerca de</b></h3>
+          <ul class="list-group list-group-flush fw-light fs-6 border-0">
+            <a href="#"><li class="list-group-item border-0">Pólitica de Privacidad</li></a>
+            <a href="#"><li class="list-group-item border-0">Aviso Legal</li></a>
+            <a href="#"><li class="list-group-item border-0">Pólitica de Cookies</li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
 </body>
 </html>

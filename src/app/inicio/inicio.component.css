@@ -1,0 +1,13 @@
+.card {
+    margin: 10px 0;
+  }
+  
+  .carousel-item {
+    padding: 20px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+  }

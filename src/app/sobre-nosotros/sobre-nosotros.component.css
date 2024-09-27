@@ -1,0 +1,29 @@
+.position-relative {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2em;
+    text-align: center;
+}
+
+.animated-text {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

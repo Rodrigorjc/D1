@@ -1,1 +1,15 @@
-<p>vista-ruta works!</p>
+<div class="container mt-4" style="height: 62vh;">
+    <div class="row mt-4">
+        <div class="col mt-4">
+            <div class="shadow rounded" id="map" style="height: 400px;"></div>
+        </div>
+        <div class="col mt-4">
+            <h2 class="fs-1">
+                {{ rutaNombre }}
+                <span id="heart" style="cursor: pointer; font-size: 24px; color:red;" class="far fa-heart" ></span>
+            </h2>
+            <h3 class="fs-2">{{ rutaCreador }}</h3>
+            <p class="fs-4">{{ rutaDescripcion }}</p>
+        </div>
+    </div>
+</div>

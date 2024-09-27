@@ -1,1 +1,26 @@
-<p>registro works!</p>
+<div class="m-5 d-flex justify-content-center align-items-center text-center" style="height: 60vh;">
+    <div class="container w-25 p-4 border rounded shadow" style="background-color: white;">
+        <form action="" class="d-flex flex-column align-items-center w-100">
+            <h2 class="mb-4">Registro</h2>
+            <div class="form-group mb-3 w-75">
+                <input type="text" class="form-control" placeholder="Nombre de usuario" style="background-color: #BFD7FF;">
+            </div>
+            <div class="form-group mb-3 w-75">
+                <input type="email" class="form-control" placeholder="Correo electrónico" style="background-color: #BFD7FF;">
+            </div>
+            <div class="form-group mb-3 w-75">
+                <input type="password" class="form-control" placeholder="Contraseña" style="background-color: #BFD7FF;">
+            </div>
+            <div class="form-group mb-4 w-75">
+                <input type="password" class="form-control" placeholder="Confirmar contraseña" style="background-color: #BFD7FF;">
+            </div>
+            <button type="button" class="btn btn-primary w-50 mb-3" onclick="redirectToHome()">Registrarse</button>
+            <p>¿Ya tienes cuenta? <i><a href="/login" class="text-decoration-underline">Inicia sesión aquí</a></i></p>
+        </form>
+    </div>
+</div>
+<script>
+    function redirectToHome() {
+        window.location.href = '/inicio'; 
+    }
+</script>

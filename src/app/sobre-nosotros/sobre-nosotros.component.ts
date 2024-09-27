@@ -1,12 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Renderer2, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-sobre-nosotros',
-  standalone: true,
-  imports: [],
   templateUrl: './sobre-nosotros.component.html',
-  styleUrl: './sobre-nosotros.component.css'
+  styleUrls: ['./sobre-nosotros.component.css']
 })
-export class SobreNosotrosComponent {
+export class SobreNosotrosComponent  {
 
 }

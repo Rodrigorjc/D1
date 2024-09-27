@@ -1,1 +1,113 @@
-<p>inicio works!</p>
+<!-- Contenedor para el mapa de la ruta seleccionada -->
+<div class="container shadow mt-4" style="background-color: #BFD7FF; border-radius:10px;">
+  <div class="row">
+    <div class="col-md-7 d-flex flex-column justify-content-center align-items-center px-4 ms-4">
+      <h3 class="fs-1 fw-bold">{{ rutaSeleccionada.nombre }}</h3>
+      <p class="fs-3 fw-medium">{{ rutaSeleccionada.creador }}</p>
+      <p class="fs-5 fw-lighter">{{ rutaSeleccionada.descripcion }}</p>
+    </div>
+    <div class="col-md-4 p-3 b rounded">
+      <div [id]="'map-' + rutaSeleccionada.id" style="height: 300px; width: 100%;"></div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Sección de rutas más visitadas -->
+  <div class="container">
+    <h3 class="mt-5 fs-2 fw-bold">Rutas más visitadas</h3>
+    <div class="row p-0 w-100">
+      <div class="col-md-4 p-0" *ngFor="let ruta of rutasMasVisitadas" (click)="irADetalleRuta(ruta.id)">
+        <div class="card me-4">
+          <div class="card-body shadow">
+            <div class="map-container" [id]="'map-' + ruta.id" style="height: 200px;"></div>
+            <h5 class="card-title text-center mt-3 mb-0 ">{{ ruta.nombre }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <!-- Rutas mas cercanas -->
+   <div class="container">
+    <h3 class="mt-5 fs-2 fw-bold">Rutas más cercanas</h3>
+    <div class="row p-0 w-100">
+      <div class="col-md-4 p-0" *ngFor="let ruta of rutasCercanas" (click)="irADetalleRuta(ruta.id)">
+        <div class="card me-4">
+          <div class="card-body shadow">
+            <div class="map-container" [id]="'map-' + ruta.id" style="height: 200px;"></div>
+            <h5 class="card-title text-center mt-3 mb-0 ">{{ ruta.nombre }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- Rutas mejor valoradas -->
+    <div class="container">
+      <h3 class="mt-5 fs-2 fw-bold">Rutas mejor valoradas</h3>
+      <div class="row p-0 w-100">
+        <div class="col-md-4 p-0" *ngFor="let ruta of rutasMejorValoradas" (click)="irADetalleRuta(ruta.id)">
+          <div class="card me-4">
+            <div class="card-body shadow">
+              <div class="map-container" [id]="'map-' + ruta.id" style="height: 200px;"></div>
+              <h5 class="card-title text-center mt-3 mb-0 ">{{ ruta.nombre }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mis rutas -->
+    <div class="container">
+      <h3 class="mt-5 fs-2 fw-bold">Mis rutas</h3>
+      <div class="row p-0 w-100">
+        <div class="col-md-4 p-0" *ngFor="let ruta of misRutas" (click)="irADetalleRuta(ruta.id)">
+          <div class="card me-4">
+            <div class="card-body shadow">
+              <div class="map-container" [id]="'map-' + ruta.id" style="height: 200px;"></div>
+              <h5 class="card-title text-center mt-3 mb-0 ">{{ ruta.nombre }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Deportes disponibles-->
+    <div class="container">
+      <h3 class="mt-5 fs-2 fw-bold">Deportes disponibles</h3>
+      <div class="row p-0 w-100">
+        <div class="col-md-2 p-0" *ngFor="let deporte of deportes">
+          <div class="card me-4 h-100">
+            <div class="card-body d-flex flex-column shadow">
+              <section class="d-flex align-items-center justify-content-center" style="height: 150px;">
+                <img [src]="deporte.img" alt="{{ deporte.nombre }}" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: cover;">
+              </section>
+              <h5 class="card-title text-center mt-3 mb-0">{{ deporte.nombre }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Amigos disponibles -->
+    <div class="container mb-5">
+      <h3 class="mt-5 fs-2 fw-bold">Tus amigos</h3>
+      <div class="row p-0 w-100">
+        <div class="col-md-2 p-0" *ngFor="let amigo of amigos">
+          <div class="card me-4 h-100">
+            <div class="card-body d-flex flex-column shadow">
+              <section class="d-flex align-items-center justify-content-center" style="height: 150px;">
+                <img [src]="amigo.img" alt="{{ amigo.nombre }}" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: cover;">
+              </section>
+              <h5 class="card-title text-center mt-3 mb-0">{{ amigo.nombre }}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+    <div class="container">
+      <h2 class="fs-3">Quieres saber sobre nosotros <i><a href="/sobre-nosotros" class="text-decoration-underline">Pulsa aquí</a></i></h2>
+    </div>
+    
+  

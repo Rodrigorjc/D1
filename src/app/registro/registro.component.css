@@ -1,0 +1,11 @@
+button{
+    background-color: #BFD7FF;
+    color: black;
+}
+input{
+    background-color: #BFD7FF;
+    color: white !important;
+}
+.form-group{
+    color: white !important;
+}

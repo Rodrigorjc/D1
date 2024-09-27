@@ -16,6 +16,9 @@ nav a{
     text-decoration: none;
     font-size: 48px;
 }
+.robot{
+    color: black;
+}
 .fas{
     font-size: 25px;
     margin-left: 5px;
@@ -35,3 +38,14 @@ display: block;
 margin-right: auto;
 }
 
+footer{
+    background-color: #9BB1FF;
+}
+footer ul, li, a{
+    background: transparent !important;
+    text-decoration: none;
+    color: black;
+}
+footer h3{
+    color: white;
+}
